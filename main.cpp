@@ -25,7 +25,7 @@ enmenu_image menu_user_input(){
     return enmenu_image(choice);
 }
 
-void gray_scale( Image image){
+void gray_scale( Image &image){
 
     for (int i = 0; i < image.width; ++i) {
         for (int j = 0; j < image.height; ++j) {
@@ -48,19 +48,23 @@ Image image;
 int main() {
 
     while(true){
+        Image *ptr_image=&image;
         menu();
         enmenu_image image_choice = menu_user_input();
         if (image_choice == ::load_image) {
             string file_name;
-            Image loaded(file_name);
-            image =loaded;
-            gray_scale(image);
-
-        }
-         if (image_choice == ::save_image) {
-            string file_name;
             cin>>file_name;
-            image.saveImage(file_name);
+             Image image(file_name);
+             *ptr_image=image;
+            gray_scale(*ptr_image);
+        }
+         if (image_choice == ::save_image)
+         {
+             string file_name;
+             cin>>file_name;
+            ptr_image->saveImage(file_name);
+             break;
+
         }
          if (image_choice == ::Exit) {
 

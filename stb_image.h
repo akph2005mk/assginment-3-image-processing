@@ -133,8 +133,7 @@ RECENT REVISION HISTORY:
                             Brad Weinberger    Matvey Cherevko      github:mosra
     Luca Sas                Alexander Veselov  Zack Middleton       [reserved]
     Ryan C. Gordon          [reserved]                              [reserved]
-    mohammed ahmed khalf
-                     ADD YOUR NAME HERE
+                     DO NOT ADD YOUR NAME HERE
 
                      Jacko Dirks
 

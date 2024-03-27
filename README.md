@@ -1,6 +1,6 @@
 # assginment-3-image-processing
 
-##Purpose: this program is designed to embrace these filters :
+## Purpose: this program is designed to embrace these filters :
  filter one : convert image to grayscale
  filter two : rotate image clockwise to a selected rotation angle (90,180,270)
  filter three : invert image's color
